@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Gallery | Prefect Newsletter</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@400&display=swap" rel="stylesheet">
+        
+
+        
+
+</head>
+
+<body onload="typeWriter">
+        
+        
+    <section class="logo">
+        <div></div>
+        <h1 id="title"></h1>
+        <script>
+            var i = 0;
+            var txt = 'Prefect Newsletter';
+            var speed = 50;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("title").innerHTML = document.getElementById("title").innerHTML + txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            } 
+            window.onload = typeWriter;
+        </script>
+    </section>
+<div class="content-container">      
+    <nav>
+    
+        <section class="nav-bar navigation">
+                
+            <p><a href="index.html">Home</a></p>
+                    
+                    
+            <p><a href="about_page.html">About Us</a></p>
+        
+            <p><a href="gallery_page.html">Gallery</a></p>
+        
+            <p><a href="calendar_page.html">Calendar</a></p>
+        
+            <p><a href="resource_page.html">Resources</a></p>
+        
+                
+        </section>
+        <section>
+
+        </section>
+    </nav>
+</div>
+<div>
+    
+</div>
+
+<div class="content-container gallery-back" style="padding: 60px;">
+   <div id="gallery-title">
+        <div style="display: grid;grid-template-columns: 100%;">
+       <img src="images/galleryicon.png" style="width: 50px;place-self: center;">
+       </div>
+        <h2 style="text-align:center;padding:0;">Gallery</h2>
+        <p style="text-align: center;">Under construction! </p>
+    </div>
+    <!--
+    <div style="padding: 0 8%;margin: 0;">
+        <iframe src="https://drive.google.com/embeddedfolderview?id=1TArapmY5j91Uqp4itThp4lqEiBo65P2Q#grid" style="width:100%; height:1000px; border:0;background-color: white;"></iframe>
+    </div>-->
+    
+</div>
+   
+
+
+<footer>
+    <div>
+        made with love by the prefects of 2020/2021 :)
+    </div>
+    <div></div>
+    <div><span>photo by <a href="https://unsplash.com/@stilclassics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">STIL</a> on <a href="https://unsplash.com/s/photos/desk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">unsplash</a></span></div>
+</footer>
+</body>

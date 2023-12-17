@@ -1,0 +1,647 @@
+:root {
+    --main-bg-color: rgb(250, 236, 157);
+    --main-accent-color: rgb(0, 0, 0);
+    --main-font: 'Old Standard TT', serif;
+    --secondary-font: 'Old Standard TT', serif;
+    --accent-color-1:  rgb(119, 142, 69);
+    --accent-color-2: rgb(184, 183, 183);
+    --main-padding: 15px;
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(207, 220, 221);
+    --color3: green;
+    
+
+  }
+  
+body {
+    background-color:white;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: var(--main-font);
+}
+div.content-container {
+    height: 1000px;
+    background-color: var(--main-accent-color);
+    height: 100%;
+    margin: 0 15% 40px 15%;
+    padding: 15px;
+    
+}
+div.instagram-preview {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: transparent;
+  
+}
+div.events {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0 15% 40px 15%;
+}
+div.events div.content-container{
+    padding: 10px;
+    margin: 10px;
+}
+
+div.events div#feature{
+    margin: 0px 20px 0px 0px;
+    background-color: transparent;
+  
+    transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+  animation: slide-in 1.5s forwards;
+  -webkit-animation: slide-in 1.5s forwards;
+}
+div.events div#feature div#feature-video{
+  
+  background-color: white;
+  padding: 10px;
+
+
+}
+div.about {
+  
+  display: grid;
+  grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+  justify-items: center;
+  align-content: center;
+  padding: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
+}
+div.about div {
+  background-color: transparent;
+  
+  width: 100%;
+  text-align: center;
+  
+} 
+div.about div section{
+  margin: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--accent-color-2);
+
+} 
+div.about div section h4{
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 0.8;
+  margin: 0;
+  color: black;
+  padding: 10px;
+  position: relative;
+  top: 30px;
+  z-index: 3;
+}
+div.about div section h5{
+  position: relative;
+  top: 0px;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+  
+}
+div.about div section h5 span{
+  background-color: white;
+  line-height: 1;
+  z-index: 3;
+}
+div.about div section h6{
+  position: relative;
+  top: 0px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 15px;
+  
+}
+div.about div section img{
+  width: 60%;
+  align-self: center;
+  filter: sepia(20%);
+} 
+
+div.events div#feature div#feature-caption{
+  padding: 0 40px;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  background-color:rgba(255, 255, 255, 0.445);
+}
+div.events div#upcoming{
+    overflow: hidden;
+    background-color: var(--accent-color-2);
+    transform: translateX(200%);
+    
+    
+  -webkit-transform: translateX(200%);
+  animation: slide-in 1.5s forwards;
+  -webkit-animation: slide-in 1.5s forwards;
+}
+div#video-container {
+  transform: translateX(200%);
+    
+    
+  -webkit-transform: translateX(200%);
+  animation: slide-in 1.5s forwards;
+  -webkit-animation: slide-in 1.5s forwards;
+}
+section.logo{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    margin-bottom: 30px;
+    
+}
+section.logo h1{
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 30px;
+    font-family: var(--main-font);
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+
+
+}
+div#battleinfo{
+  display:grid;
+  grid-template-columns: 45% 55%;
+}
+nav {
+    list-style: none;
+    /*background-color: black;*/
+}
+nav section.navigation{
+    width:auto;
+    background:transparent;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  
+   /*background-color: black;*/
+    align-content: center;
+    justify-items: center;
+    
+}
+nav section.navigation p {
+    font-family: "PingFang SC";
+    font-size: 15px;
+    background-color: transparent;
+    align-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    padding: 7px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: transparent solid 3px;
+    text-align: center;
+    text-transform: lowercase;
+    
+    
+    
+}
+nav section.navigation p:hover{
+    background-color: rgba(255, 255, 255,1);
+    color: black;
+    border-bottom: var(--accent-color-1) solid 3px;
+    
+}
+section p.owndesciption a {
+  color: black;
+  text-decoration: underline;
+}
+nav section.navigation p:hover a {
+  color: white;
+  text-decoration: none;
+  
+}
+nav section.navigation p:hover a{
+    color: black;
+}
+p {
+   font-family: var(--main-font);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+div#resource-container {
+  margin:0 15% 40px 15%;
+  display:grid; 
+  grid-template-columns: 25% 25% 25% 25%;
+}
+div#resource-container div div.resource-item {
+
+}
+div#resource-container div div.resource-item h3{
+  font-family: 'Bodoni Moda';
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+div#resource-container div div.resource-item a{
+color: black;
+text-decoration: underline;
+
+}
+h4 {
+    text-align: center;
+    padding: 0;
+    font-size: 24px;
+    color: white;
+    text-transform: lowercase;
+}
+
+.events div#upcoming h4 {
+  align-self: center;
+}
+
+div.upcomingeventitem {
+    background-color: white;
+    padding: 7px;
+    margin-bottom: 10px;
+    
+}
+.upcomingeventitem p {
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    font-size: 15px;
+}
+div.upcomingeventitem p span.event-title {
+    font-size: 20px;
+    font-family: var(--main-font);
+    font-weight: 600;
+    text-transform: lowercase;
+    
+}
+div.upcomingeventitem:hover p span.event-title {
+    color: var(--main-bg-color);
+    
+}
+div.upcomingeventitem p span.event-date {
+    font-size: 17px;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+}
+div.upcomingeventitem:hover p span.event-date {
+  
+    background-color:var(--accent-color-1);
+   
+}
+footer{
+      background-color: black;
+      color: white;
+      padding: 100px;
+  }
+footer div {
+    text-align: center;
+  }
+footer div a{
+    text-decoration-line: underline;
+  }
+  /*animation*/
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes scaleDown {
+    
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes slide-in {
+    100% { transform: translateX(0%); }
+  }
+  @keyframes reveal-in {
+    
+    100% {
+     height: auto;
+    }
+  }
+  
+  
+  /*gallery*/
+
+div.about-headprefects {
+    display: grid;
+    grid-template-columns: 15% 85%;
+  
+    background-color: transparent;
+   
+}
+div.about-headprefects h4 {
+   color: black;
+   text-align: left;
+   padding-top: 70px;
+   writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 3px;
+
+}
+section.content-container {
+  padding: 30px 0;
+  background-color: var(--color1);
+}
+div.about-headprefects div.ownprofile{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    justify-items: center;
+    background-color:var(--color1);
+    padding: 0 30px;
+    padding-top: 0;
+
+}
+div.about-headprefects div.ownprofile h5 {
+  font-size: 20px;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+}
+div.about-headprefects div.ownprofile section{
+    padding: 10px 30px;
+    align-self: center;
+}
+p.owndescription {
+  margin: 20px 0;
+  text-align: justify;
+}
+p.owndescription a{
+  color: var(--accent-color-1);
+}
+div.about-headprefects div.ownprofile img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    filter: grayscale(100%);
+  }
+  div.about-headprefects div.ownprofile img.small{
+    display: none;
+  }
+div.about-headprefects div.ownprofile img:hover {
+    filter: brightness(150%);
+    filter: grayscale(0%);
+  }
+
+div.gallery-back {
+  background-color: var(--color2);
+
+}
+div.gallery-container {
+  
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+  justify-items: center;
+}
+  
+div.gallery-container div.gallery-column {
+  padding: 10px;
+}
+div.gallery-container div.gallery-column img.gallery-image {
+  width: 100%;
+  align-self: center;
+}
+
+div#gallery-title {
+  font-size: 30px;
+  padding: 0;
+}
+div#gallery-title h2 {
+  padding: 0;
+  margin: 10px;
+}
+ div#about-grid {
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+ }
+ div#about-grid div.grid-image {
+   padding: 30px;
+   background-color:var(--accent-color-2);
+   margin: 30px;
+ }
+ 
+ div#about-grid div.grid-image img{
+   width: 100%;
+   border-radius: 100%;
+   background-color: var(--accent-color-2);
+ }
+ div#about-grid div.grid-image img:hover {
+  
+}
+ 
+ div#about-grid .three{
+   display: grid;
+   grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-column-end: span 3;
+    grid-row-end: span 1;
+    background:var(--color2);
+}
+
+div#about-grid .two{
+  display: grid;
+  grid-template-columns: 50% 50%;
+   grid-column-end: span 2;
+   grid-row-end: span 1;
+   background: var(--color1);
+}
+div#about-grid .one{
+  display: grid;
+  grid-template-columns: 100%;
+   background: var(--accent-color-1);
+}
+div#about-grid div.prefectgroup div.headboy {
+  background-color: blue;
+}
+ p.about-caption {
+    text-align: center;
+ }
+ div#about-grid .gone {
+  display: none;
+  grid-column-end: span 4;
+} 
+div.gone {
+  grid-column-end: span 4;
+ display: none;
+  
+} 
+
+ div#about-grid div#more-info3 {
+  grid-column-end: span 4;
+  background-color: white;
+  padding: 30px;
+ }
+ 
+ 
+ 
+
+/*resizing-index*/
+@media screen and (max-width: 1500px){
+  div.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+  div.about-headprefects div.ownprofile img {
+    
+    border-radius: 5px;
+  }
+  
+}
+
+@media screen and (max-width: 1010px) {
+  div#resource-container {
+    display: block;
+  }
+  div#featureiframe {
+    height: 350px;
+  }
+  div div#battleinfo {
+    display:block;
+  }
+  div.events {
+      display: block;
+      margin: 0 15% 40px 15%;
+  }
+  div.events div.content-container{
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  div.events div#feature{
+    margin: 0px 0px 0px 0px;
+  
+  }
+  div.events div#upcoming{
+      margin: 0px 0px 0px 0px;
+      background-color: var(--accent-color-2);
+      display: grid;
+      grid-template-columns: 50% 50%; 
+  }
+  div.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+   
+  div.upcomingeventitem {
+     
+      margin: 10px;
+  }
+  
+  div.about-headprefects h4{
+    text-align: left;
+    padding: 20px;
+  }
+  div.about-headprefects div.ownprofile {
+    display: block;
+  }
+}
+@media screen and (max-width: 850px){
+  div.about {
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
+}
+@media screen and (max-width: 680px) {
+  /*index*/
+  div#resource-container {
+    display: block;
+  }
+  body {
+    background-image: url(images/backsmall.jpg);
+  }
+  div.events div#upcoming.content-container{
+      margin: 0px 0px 0px 0px;
+      background-color: gray;
+      display: grid;
+      grid-template-columns: 100%;
+      
+  }
+  
+    div#feature iframe {
+      height: 200px;
+    }
+    div.about {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+    div.about-headprefects h4{
+      text-align: left;
+      align-self: auto;
+      padding:  0px;
+    }
+    div.about-headprefects div.ownprofile {
+      display: block;
+    }
+    div.about-headprefects img{
+      filter: grayscale(0);
+      align-self: center;
+      justify-self: center;
+      padding: 0px;
+    }
+    
+    div.about-prefects {
+      margin-bottom: 10px;
+    }
+    div.about-headprefects {
+      
+      padding: 30px 10px;
+  }
+  div.about-headprefects div.ownprofile {
+    padding: 0px;
+    font-size: 14px;
+  }
+  div.about-headprefects div.ownprofile p{
+    padding: 0px;
+  }
+  div.about-headprefects div.ownprofile img {
+    display: none;
+    border-radius: 0;
+  }
+  div.about-headprefects div.ownprofile img.small{
+    display: block;
+    filter: grayscale(0);
+  }
+  .smalltitle {
+    display: none;
+  }
+    div.content-container {
+      height: 1000px;
+      
+      height: 100%;
+      margin: 0 5% 40px 5%;
+      padding: 15px;
+      
+  }
+  div.gallery-container {
+    grid-template-columns: 100%;
+  }
+  
+}
+
+
+

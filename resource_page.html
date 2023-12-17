@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Resources | Prefect Newsletter</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bodoni+Moda&display=swap" rel="stylesheet">
+  
+</head>
+
+<body onload="typeWriter">
+        
+        
+    <section class="logo">
+        <div></div>
+        <h1 id="title"></h1>
+        <script>
+            var i = 0;
+            var txt = 'Prefect Newsletter';
+            var speed = 50;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("title").innerHTML = document.getElementById("title").innerHTML + txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            } 
+            window.onload = typeWriter;
+        </script>
+    </section>
+    <div class="content-container">      
+        <nav>
+        
+            <section class="nav-bar navigation">
+                    
+                <p><a href="index.html">Home</a></p>
+                    
+                    
+                <p><a href="about_page.html">About Us</a></p>
+            
+                <p><a href="gallery_page.html">Gallery</a></p>
+            
+                <p><a href="calendar_page.html">Calendar</a></p>
+            
+                <p><a href="resource_page.html">Resources</a></p>
+            
+            </section>
+            <section>
+
+            </section>
+        </nav>
+    </div>
+    <h2 style="text-align: center;font-size: 30px;">Resources</h2>
+    <div style="" id="resource-container">
+            <div style="padding: 10px;">
+                <div style="background-color:antiquewhite;color:black;padding:20px;border-radius: 5px;" class="resource-item">
+                    <h3 >Timetables</h3>
+                    <a style="" href="https://ea.elkanah.co.za/ea/timetable.php">Link to Timetable</a>
+                </div>
+               
+            </div>
+            <div style="padding: 10px;grid-column-start: 2;grid-column-end: 4;">
+                <div style="background-color:rgb(217, 243, 123);color:black;padding:20px;border-radius: 5px;" class="resource-item">
+                    <h3>COVID-19 Protocols</h3>
+                    <a style="color: black;text-decoration: underline;" href="https://mcusercontent.com/867251c9fca152dbf1c75c896/files/9a4e9d57-63d4-4a64-af7c-58667f53c036/EH_Returning_to_School_High_School_Jan_2021.pdf">Details for Returning to School Protocol</a>
+                </div>
+               
+            </div>
+            
+            
+    </div>
+    
+   <!--<div class="about">
+        <div>
+            <section>
+                <a href="resources/environmental.html">
+                <img src="resources/images/environmentphoto.jpg">
+                <h5><span> <a style="color: black; background-color: white;" href="resources/environmental.html">Environmental<br />Affairs</a></span></h5> 
+                <h6 style="">Tips on How to Live a Greener Life! </br>Includes a list of Plant Based Alternatives for everyday meaty meals</h6>
+                </a>
+            </section>
+        </div>
+        <div>
+            <section>
+                <a href="resources/revival.html">
+                    <img src="resources/images/revivalphoto.jpg">
+                    <h5><span> <a style="color: black; background-color: white;" href="resources/revival.html">Revival<br />Resources</a></span></h5> 
+                    <h6 style=""></br>Weekly list of Plant Based Alternatives, </h6>
+                    </a>
+                </section>
+        </div>
+  
+        <div>
+            <section>
+                <a href="resources/matriccommitee.html">
+                    <img src="resources/images/matriccommiteephoto.jpg">
+                    <h5><span> <a style="color: black; background-color: white;" href="resources/matric_commitee.html">Matric<br />Committee</a></span></h5> 
+                    <h6 style="">Let the excitement begin! </br>Details of Upcoming Events, or even just reminisce about past </h6>
+                    </a>
+                </section>
+        </div>
+    </div> -->
+   
+
+    
+    <footer style="">
+        <div style="margin-top:100px">
+            made with love by the prefects of 2020/2021 :)
+        </div>
+        <div style="margin-bottom:100px"><span>photo by <a href="https://unsplash.com/@stilclassics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">STIL</a> on <a href="https://unsplash.com/s/photos/desk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">unsplash</a></span></div>
+    </footer>
+    
+    
+</body>
+</html>
